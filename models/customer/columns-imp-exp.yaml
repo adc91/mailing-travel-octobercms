@@ -1,0 +1,25 @@
+columns:
+    fullname:
+        label: 'aldea.travel::lang.customer.fullname'
+    birthdate:
+        label: 'aldea.travel::lang.customer.birthdate'
+    birthplace:
+        label: 'aldea.travel::lang.customer.birthplace'
+    ci:
+        label: 'aldea.travel::lang.customer.ci'
+    ci_expiration:
+        label: 'aldea.travel::lang.customer.ci_expiration'
+    passport:
+        label: 'aldea.travel::lang.customer.passport'
+    passport_expiration:
+        label: 'aldea.travel::lang.customer.passport_expiration'
+    ruc:
+        label: 'aldea.travel::lang.customer.ruc'
+    business_name:
+        label: 'aldea.travel::lang.customer.business_name'
+    additional_information:
+        label: 'aldea.travel::lang.customer.additional_information'
+    email:
+        label: 'Emails'
+    address:
+        label: 'Address'

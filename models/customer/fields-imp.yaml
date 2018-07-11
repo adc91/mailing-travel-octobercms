@@ -1,0 +1,14 @@
+fields:
+    group:
+        label: 'aldea.travel::lang.customer.group'
+        nameFrom: name
+        descriptionFrom: id
+        span: left
+        type: relation
+    city:
+        label: 'aldea.travel::lang.customer.city'
+        span: left
+        required: true
+        nameFrom: name
+        descriptionFrom: id
+        type: relation

@@ -1,0 +1,6 @@
+fields:
+    name:
+        label: 'aldea.travel::lang.group.name'
+        oc.commentPosition: ''
+        span: auto
+        type: text

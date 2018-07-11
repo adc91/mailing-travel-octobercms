@@ -1,0 +1,15 @@
+title: 'aldea.travel::lang.customer.list_name'
+modelClass: Aldea\Travel\Models\Customer
+list: $/aldea/travel/models/customer/columns.yaml
+recordUrl: 'aldea/travel/customers/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: id
+    direction: desc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

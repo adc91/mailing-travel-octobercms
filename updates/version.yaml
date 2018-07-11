@@ -1,0 +1,26 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table aldea_travel_countries'
+    - builder_table_create_aldea_travel_countries.php
+1.0.3:
+    - 'Created table aldea_travel_groups'
+    - builder_table_create_aldea_travel_groups.php
+1.0.4:
+    - 'Created table aldea_travel_customers'
+    - builder_table_create_aldea_travel_customers.php
+1.0.5:
+    - 'Created table aldea_travel_customers_emails'
+    - builder_table_create_aldea_travel_customers_emails.php
+1.0.6:
+    - 'Created table aldea_travel_customers_address'
+    - builder_table_create_aldea_travel_customers_address.php
+1.0.7:
+    - 'Created table aldea_travel_customers_phones'
+    - builder_table_create_aldea_travel_customers_phones.php
+1.0.8:
+    - 'Created table aldea_travel_packages'
+    - builder_table_create_aldea_travel_packages.php
+1.0.9:
+    - 'Created table aldea_travel_packages_sent'
+    - builder_table_create_aldea_travel_packages_sent.php

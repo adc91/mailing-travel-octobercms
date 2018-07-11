@@ -1,0 +1,13 @@
+fields:
+    phone:
+        label: 'aldea.travel::lang.customerPhone.phone'
+        oc.commentPosition: ''
+        span: left
+        required: 1
+        type: text
+    type:
+        label: 'aldea.travel::lang.customerPhone.type'
+        oc.commentPosition: ''
+        span: left
+        required: 1
+        type: dropdown

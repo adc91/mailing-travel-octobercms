@@ -1,0 +1,35 @@
+<?= Form::open(['id' => 'createForm']) ?>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="popup">&times;</button>
+        <h4 class="modal-title"><?= e(trans('aldea.travel::lang.package.add_package')) ?></h4>
+    </div>
+    
+    <div class="modal-body">
+        <div class="layout-row">
+            <?= $this->formRender() ?>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button
+            type="submit"
+            data-request="onCreate"
+            data-request-data="redirect:0"
+            data-hotkey="ctrl+s, cmd+s"
+            data-popup-load-indicator
+            class="btn btn-primary">
+            <?= e(trans('backend::lang.form.create')) ?>
+        </button>
+
+        <button
+            type="button"
+            class="btn btn-default"
+            data-dismiss="popup">
+            <?= e(trans('backend::lang.form.cancel')) ?>
+        </button>
+    </div>
+
+    <input type="hidden" name="popup_mode" value="1" />
+
+<?= Form::close() ?>

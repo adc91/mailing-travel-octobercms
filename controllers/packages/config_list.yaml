@@ -1,0 +1,15 @@
+title: 'aldea.travel::lang.package.list_name'
+modelClass: Aldea\Travel\Models\Package
+list: $/aldea/travel/models/package/columns.yaml
+recordOnClick: "$.popup({ handler: 'onUpdateForm', extraData: { popup_mode: 1, id: ':id' } })"
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: id
+    direction: desc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

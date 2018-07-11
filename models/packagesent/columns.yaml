@@ -1,0 +1,17 @@
+columns:
+    subject:
+        label: Asunto
+        type: text
+    customer_id:
+        label: Customer
+        type: text
+        select: fullname
+        relation: customer
+    package_id:
+        label: Package
+        type: text
+        select: name
+        relation: package
+    created_at:
+        label: 'Fecha de envío'
+        type: date

@@ -1,0 +1,16 @@
+name: Grupos
+modelClass: Aldea\Travel\Models\Group
+form: $/aldea/travel/models/group/fields.yaml
+defaultRedirect: aldea/travel/groups
+create:
+    title: 'aldea.travel::lang.group.add_group'
+    redirect: 'aldea/travel/groups/update/:id'
+    redirectClose: aldea/travel/groups
+    flashSave: 'aldea.travel::lang.group.add_group_success'
+update:
+    title: 'aldea.travel::lang.group.edit_group'
+    redirect: aldea/travel/groups
+    redirectClose: aldea/travel/groups
+    flashSave: 'aldea.travel::lang.group.edit_group_success'
+    flashDelete: 'aldea.travel::lang.group.delete_group'
+preview: {  }

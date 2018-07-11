@@ -1,0 +1,24 @@
+fields:
+    package:
+        label: 'aldea.travel::lang.packageSent.packageLabel'
+        nameFrom: name
+        descriptionFrom: id
+        prompt: 'aldea.travel::lang.packageSent.packagePrompt'
+        list: $/aldea/travel/models/package/columns.yaml
+        span: left
+        required: 1
+        type: recordfinder
+    group:
+        label: 'aldea.travel::lang.packageSent.groupLabel'
+        oc.commentPosition: ''
+        nameFrom: name
+        descriptionFrom: description
+        span: left
+        required: 1
+        type: relation
+    subject:
+        label: 'aldea.travel::lang.packageSent.subject'
+        oc.commentPosition: ''
+        span: left
+        required: 1
+        type: text

@@ -1,0 +1,15 @@
+columns:
+    fullname:
+        label: 'aldea.travel::lang.customer.fullname'
+        type: text
+        searchable: true
+    group_id:
+        label: 'aldea.travel::lang.customer.group'
+        type: text
+        select: name
+        relation: group
+    city_id:
+        label: 'aldea.travel::lang.customer.city'
+        type: text
+        select: name
+        relation: city

@@ -1,0 +1,12 @@
+fields:
+    address:
+        label: 'aldea.travel::lang.customerAddress.address'
+        oc.commentPosition: ''
+        span: left
+        required: 1
+        type: text
+    type:
+        label: 'aldea.travel::lang.customerAddress.type'
+        span: left
+        required: 1
+        type: dropdown

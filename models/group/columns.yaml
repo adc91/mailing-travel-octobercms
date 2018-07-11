@@ -1,0 +1,5 @@
+columns:
+    name:
+        label: 'aldea.travel::lang.group.name'
+        type: text
+        searchable: true

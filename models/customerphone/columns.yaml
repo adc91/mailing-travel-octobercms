@@ -1,0 +1,8 @@
+columns:
+    phone:
+        label: 'aldea.travel::lang.customerPhone.phone'
+        type: text
+        searchable: true
+    type:
+        label: 'aldea.travel::lang.customerPhone.type'
+        type: text

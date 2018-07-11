@@ -1,0 +1,102 @@
+fields:
+    fullname:
+        label: 'aldea.travel::lang.customer.fullname'
+        oc.commentPosition: ''
+        span: left
+        required: 1
+        type: text
+    birthdate:
+        label: 'aldea.travel::lang.customer.birthdate'
+        oc.commentPosition: ''
+        mode: date
+        span: left
+        type: datepicker
+    birthplace:
+        label: 'aldea.travel::lang.customer.birthplace'
+        oc.commentPosition: ''
+        span: right
+        type: text
+    ci:
+        label: 'aldea.travel::lang.customer.ci'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    ci_expiration:
+        label: 'aldea.travel::lang.customer.ci_expiration'
+        oc.commentPosition: ''
+        span: right
+        mode: date
+        type: datepicker
+    passport:
+        label: 'aldea.travel::lang.customer.passport'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    passport_expiration:
+        label: 'aldea.travel::lang.customer.passport_expiration'
+        oc.commentPosition: ''
+        span: right
+        mode: date
+        type: datepicker
+    ruc:
+        label: 'aldea.travel::lang.customer.ruc'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    business_name:
+        label: 'aldea.travel::lang.customer.business_name'
+        oc.commentPosition: ''
+        span: right
+        type: text
+    city:
+        label: 'aldea.travel::lang.customer.city'
+        span: auto
+        oc.commentPosition: ''
+        required: true
+        nameFrom: name
+        descriptionFrom: id
+        type: relation
+    group:
+        label: 'aldea.travel::lang.customer.group'
+        span: auto
+        oc.commentPosition: ''
+        required: true
+        nameFrom: name
+        descriptionFrom: id
+        type: relation
+    additional_information:
+        label: 'aldea.travel::lang.customer.additional_information'
+        span: auto
+        size: large
+        oc.commentPosition: ''
+        type: textarea
+tabs:
+    fields:
+        emails:
+            span: full
+            type: partial
+            context:
+                - update
+                - preview
+            tab: 'aldea.travel::lang.customer.tab_emails'
+        phones:
+            span: full
+            type: partial
+            context:
+                - update
+                - preview
+            tab: 'aldea.travel::lang.customer.tab_phones'
+        address:
+            span: full
+            type: partial
+            context:
+                - update
+                - preview
+            tab: 'aldea.travel::lang.customer.tab_address'
+        packages:
+            span: full
+            type: partial
+            context:
+                - update
+                - preview
+            tab: 'aldea.travel::lang.customer.tab_packages'

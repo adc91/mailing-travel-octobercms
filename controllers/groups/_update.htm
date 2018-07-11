@@ -1,0 +1,44 @@
+<?= Form::open(['id' => 'updateForm']) ?>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="popup">&times;</button>
+        <h4 class="modal-title"><?= e(trans('aldea.travel::lang.group.edit_group')) ?></h4>
+    </div>
+    
+    <div class="modal-body">
+        <div class="layout-row">
+            <?= $this->formRender() ?>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button
+            type="submit"
+            data-request="onUpdate"
+            data-request-data="redirect:0"
+            data-hotkey="ctrl+s, cmd+s"
+            data-popup-load-indicator
+            class="btn btn-primary">
+            <?= e(trans('backend::lang.form.save')) ?>
+        </button>
+
+         <button
+            type="button"
+            class="btn btn-default"
+            data-dismiss="popup">
+            <?= e(trans('backend::lang.form.cancel')) ?>
+        </button>
+
+        <button
+            type="button"
+            class="oc-icon-trash-o btn-icon danger pull-left"
+            data-request="onDelete"
+            data-popup-load-indicator
+            data-request-confirm="<?= e(trans('backend::lang.form.confirm_delete')) ?>">
+        </button>
+    </div>
+
+    <input type="hidden" name="popup_mode" value="1">
+    <input type="hidden" name="id" value="<?= $id ?>">
+
+<?= Form::close() ?>

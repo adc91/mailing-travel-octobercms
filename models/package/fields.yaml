@@ -1,0 +1,29 @@
+fields:
+    name:
+        label: 'aldea.travel::lang.package.name'
+        span: auto
+        required: 1
+        type: text
+    name@relationcontroller:
+        label: 'aldea.travel::lang.package.name'
+        type: text
+        readOnly: true
+    image:
+        label: 'aldea.travel::lang.package.image'
+        mode: image
+        imageWidth: '400'
+        fileTypes: 'jpg,png'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        required: 1
+        type: fileupload
+        comment: 'aldea.travel::lang.package.image_comment'
+    image@relationcontroller:
+        label: 'aldea.travel::lang.package.image'
+        mode: image
+        type: fileupload
+        imageWidth: 400
+        disabled: true

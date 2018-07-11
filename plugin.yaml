@@ -1,0 +1,37 @@
+plugin:
+    name: 'aldea.travel::lang.plugin.name'
+    description: 'aldea.travel::lang.plugin.description'
+    author: Aldea
+    icon: oc-icon-plane
+    homepage: 'http://www.aldea.com.py'
+permissions:
+    manage_users:
+        tab: 'aldea.travel::lang.permission.manage_plugin'
+        label: 'aldea.travel::lang.permission.manage_users'
+    manage_packages:
+        tab: 'aldea.travel::lang.permission.manage_plugin'
+        label: 'aldea.travel::lang.permission.manage_packages'
+    manage_customers:
+        tab: 'aldea.travel::lang.permission.manage_plugin'
+        label: 'aldea.travel::lang.permission.manage_customer'
+navigation:
+    menu-packages:
+        label: 'aldea.travel::lang.menu.name'
+        url: aldea/travel/packages
+        icon: icon-paper-plane
+        permissions:
+            - manage_packages
+            - manage_users
+        sideMenu:
+            menu-packages:
+                label: 'aldea.travel::lang.menu.packages'
+                url: aldea/travel/packages
+                icon: icon-paper-plane
+            menu-customers:
+                label: 'aldea.travel::lang.menu.customers'
+                url: aldea/travel/customers
+                icon: icon-users
+            menu-groups:
+                label: 'aldea.travel::lang.menu.groups'
+                url: /aldea/travel/groups
+                icon: icon-user-plus

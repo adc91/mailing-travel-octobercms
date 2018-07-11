@@ -1,0 +1,44 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+emails:
+    label: 'aldea.travel::lang.customerEmail.list_name'
+    list: $/aldea/travel/models/customeremail/columns.yaml
+    form: $/aldea/travel/models/customeremail/fields.yaml
+    readOnly: false
+    view:
+      toolbarButtons: create|delete
+      showSearch: true
+    manage:
+        context: relation
+
+address:
+    label: 'aldea.travel::lang.customerAddress.list_name'
+    list: $/aldea/travel/models/customeraddress/columns.yaml
+    form: $/aldea/travel/models/customeraddress/fields.yaml
+    readOnly: false
+    view:
+      toolbarButtons: create|delete
+      showSearch: true
+    manage:
+        context: relation
+
+phones:
+    label: 'aldea.travel::lang.customerPhone.list_name'
+    list: $/aldea/travel/models/customerphone/columns.yaml
+    form: $/aldea/travel/models/customerphone/fields.yaml
+    readOnly: false
+    view:
+      toolbarButtons: create|delete
+      showSearch: true
+    manage:
+        context: relation
+
+packages:
+    label: 'Paquetes enviados'
+    readOnly: true
+    view:
+      list: $/aldea/travel/models/packagesent/columns.yaml
+      showSearch: true
+    manage:
+        context: relation

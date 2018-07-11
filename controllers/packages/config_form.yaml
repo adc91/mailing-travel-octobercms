@@ -1,0 +1,16 @@
+name: Packages
+modelClass: Aldea\Travel\Models\Package
+form: $/aldea/travel/models/package/fields.yaml
+defaultRedirect: aldea/travel/packages
+create:
+    title: 'aldea.travel::lang.package.add_package'
+    redirect: 'aldea/travel/packages/update/:id'
+    redirectClose: aldea/travel/packages
+    flashSave: 'aldea.travel::lang.package.add_package_success'
+update:
+    title: 'aldea.travel::lang.package.edit_package'
+    redirect: aldea/travel/packages
+    redirectClose: aldea/travel/packages
+    flashSave: 'aldea.travel::lang.package.edit_package_success'
+    flashDelete: 'aldea.travel::lang.package.delete_package'
+preview: {  }

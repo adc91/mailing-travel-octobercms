@@ -1,0 +1,16 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+import:
+    title: 'aldea.travel::lang.importExport.titleImport'
+    modelClass: Aldea\Travel\Models\CustomerImport
+    form: $/aldea/travel/models/customer/fields-imp.yaml 
+    list: $/aldea/travel/models/customer/columns-imp-exp.yaml
+    redirect: aldea/travel/customers
+
+export:
+    title: 'aldea.travel::lang.importExport.titleExport'
+    modelClass: Aldea\Travel\Models\CustomerExport
+    list: $/aldea/travel/models/customer/columns-imp-exp.yaml
+    redirect: aldea/travel/customers

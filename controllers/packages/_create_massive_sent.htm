@@ -1,0 +1,47 @@
+<?= Form::open(['id' => 'createForm']) ?>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="popup">&times;</button>
+        <h4 class="modal-title"><?= e(trans('aldea.travel::lang.packageSent.popupTitle')) ?></h4>
+    </div>
+    
+    <div class="modal-body">
+        <div class="layout-row">
+            <?= $itemFormWidget->render() ?>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <a data-control="popup"
+            data-size="huge"
+            data-handler="onCreateFormMassivePreview"
+            data-hotkey="ctrl+p"
+            data-popup-load-indicator
+            class="btn btn-primary">
+            <?= e(trans('aldea.travel::lang.packageSent.buttonPreview')) ?>
+        </a>
+
+         <button
+            type="submit"
+            data-request="onCreateFormMassiveSentStart"
+            data-request-data="redirect:0"
+            data-hotkey="ctrl+s, cmd+s"
+            data-popup-load-indicator
+            class="btn btn-success">
+            <?= e(trans('aldea.travel::lang.packageSent.buttonSentMassive')) ?>
+        </button>
+
+        <button
+            type="button"
+            class="btn btn-default"
+            data-dismiss="popup">
+            <?= e(trans('backend::lang.form.cancel')) ?>
+        </button>
+    </div>
+
+    <input type="hidden" name="popup_mode" value="1" />
+    <input type="hidden" name="package_massive_mode" value="<?= $package_massive_mode ?>">
+    <input type="hidden" name="group_massive_mode" value="<?= $group_massive_mode ?>">
+    <input type="hidden" name="customer_massive_mode" value="<?= $customer_massive_mode ?>">
+
+<?= Form::close() ?>

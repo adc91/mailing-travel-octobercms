@@ -1,0 +1,16 @@
+name: Customers
+modelClass: Aldea\Travel\Models\Customer
+form: $/aldea/travel/models/customer/fields.yaml
+defaultRedirect: aldea/travel/customers
+create:
+    title: 'aldea.travel::lang.customer.add_customer'
+    redirect: 'aldea/travel/customers/update/:id'
+    redirectClose: aldea/travel/customers
+    flashSave: 'aldea.travel::lang.customer.add_customer_success'
+update:
+    title: 'aldea.travel::lang.customer.edit_customer'
+    redirect: aldea/travel/customers
+    redirectClose: aldea/travel/customers
+    flashSave: 'aldea.travel::lang.customer.edit_customer_success'
+    flashDelete: 'aldea.travel::lang.customer.delete_customer'
+preview: {  }

@@ -1,0 +1,16 @@
+title: 'aldea.travel::lang.group.list_name'
+modelClass: Aldea\Travel\Models\Group
+list: $/aldea/travel/models/group/columns.yaml
+recordOnClick: "$.popup({ handler: 'onUpdateForm', extraData: { popup_mode: 1, id: ':id' } })"
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+showSorting: 1
+defaultSort:
+    column: id
+    direction: desc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

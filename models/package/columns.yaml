@@ -1,0 +1,6 @@
+columns:
+    name:
+        label: 'aldea.travel::lang.package.name'
+        type: text
+        searchable: true
+        sortable: false

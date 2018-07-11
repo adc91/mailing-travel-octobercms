@@ -1,0 +1,3 @@
+name: Packages Sent
+modelClass: Aldea\Travel\Models\PackageSent
+form: $/aldea/travel/models/packagesent/fields-group.yaml
